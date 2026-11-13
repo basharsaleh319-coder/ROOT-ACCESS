@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Access | Reviews &amp; Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body class="full-height-page">
+    <header class="navbar">
+        <div class="logo"><span>&gt;_</span> Root Access</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="store.html">Digital Store</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title"><span>#</span> Client Reviews &amp; Feedback</h2>
+        
+        <!-- عرض التقييمات المعتمدة -->
+        <div class="grid" style="margin-bottom: 4rem;">
+            <div class="card">
+                <div class="badge">★★★★★ Verified Audit</div>
+                <h3>"Fast and clear security report"</h3>
+                <p>"Root Access scanned my small business website and gave me a very clear PDF showing missing security headers and how to fix them."</p>
+                <span class="price" style="font-size: 0.9rem;">— Alex M. (Web Developer)</span>
+            </div>
+
+            <div class="card">
+                <div class="badge">★★★★★ Account Security</div>
+                <h3>"Great help securing my accounts"</h3>
+                <p>"Helped me set up two-factor authentication properly and organized my password security. Very professional communication."</p>
+                <span class="price" style="font-size: 0.9rem;">— Daniel K. (Store Owner)</span>
+            </div>
+        </div>
+
+        <!-- نموذج إرسال تقييم أو ملاحظة جديدة -->
+        <h2 class="section-title"><span>#</span> Leave a Review or Note</h2>
+        <div class="contact-box">
+            <p class="legal-note">* Submit your feedback below. Verified reviews are published after moderation.</p>
+            
+            <!-- ضع رابط Formspree الخاص بك هنا مكان YOUR_FORMSPREE_LINK -->
+            <form id="contactForm" action="https://formspree.io/f/meagegjn" method="POST">
+                <input type="hidden" name="subject" value="New Client Review / Feedback">
+                <input type="text" id="name" name="name" placeholder="Your Name / Handle" required>
+                <input type="email" id="email" name="email" placeholder="Your Email (Kept Private)" required>
+                <select name="rating" style="background-color: var(--bg-black); border: 1px solid rgba(0, 255, 102, 0.3); color: var(--text-main); padding: 0.9rem; border-radius: 4px; font-family: 'Fira Code', monospace;">
+                    <option value="5 Stars">★★★★★ (5/5 - Excellent)</option>
+                    <option value="4 Stars">★★★★☆ (4/5 - Very Good)</option>
+                    <option value="3 Stars">★★★☆☆ (3/5 - Good)</option>
+                    <option value="Feedback/Note">General Feedback / Suggestion</option>
+                </select>
+                <textarea id="message" name="message" rows="4" placeholder="Write your review or feedback here..." required></textarea>
+                <button type="submit" class="btn btn-primary">Submit Feedback</button>
+            </form>
+            <p id="formStatus" class="status-msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Root Access. All Rights Reserved. | Ethical Security &amp; Development.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
