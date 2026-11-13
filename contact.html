@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Access | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body class="full-height-page">
+    <header class="navbar">
+        <div class="logo"><span>&gt;_</span> Root Access</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="store.html">Digital Store</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="section-title"><span>#</span> Secure Contact &amp; Orders</h2>
+        <div class="contact-box">
+            <p class="legal-note">* Note: Security audits require written proof of domain ownership. Store orders are processed via Bit / Mani.</p>
+            
+            <!-- ضع رابط Formspree الخاص بك مكان YOUR_FORMSPREE_LINK -->
+            <form id="contactForm" action="https://formspree.io/f/meagegjn" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your Name / Handle" required>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                <input type="text" id="subject" name="subject" placeholder="Service or Product Name" required>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your target domain, preferred payment method (Bit/Mani), or project details..." required></textarea>
+                <button type="submit" class="btn btn-primary">Send Request</button>
+            </form>
+            <p id="formStatus" class="status-msg"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Root Access. All Rights Reserved. | Ethical Security &amp; Development.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
